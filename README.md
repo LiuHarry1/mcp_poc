@@ -110,3 +110,6 @@ cd .. && start.bat
 
 **环境**: Python 3.11 (conda: mcp_env)  
 **许可**: MIT License
+
+
+https://www.mcpservers.cn/servers?tab=official-servers
