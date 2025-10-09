@@ -1,0 +1,45 @@
+{
+  "servers": [
+    {
+      "name": "file-server",
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "mcp_server_file.py"
+      ],
+      "url": null,
+      "env": null
+    },
+    {
+      "name": "calc-server",
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "mcp_server_calc.py"
+      ],
+      "url": null,
+      "env": null
+    },
+    {
+      "name": "tavily-mcp",
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "tavily-mcp@0.1.4"
+      ],
+      "url": null,
+      "env": {
+        "TAVILY_API_KEY": "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"
+      }
+    },
+    {
+      "name": "rest_test_tool",
+      "type": "rest",
+      "command": null,
+      "args": null,
+      "url": "http://localhost:9000",
+      "env": null
+    }
+  ]
+}
