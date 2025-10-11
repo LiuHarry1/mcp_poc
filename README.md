@@ -113,3 +113,21 @@ cd .. && start.bat
 
 
 https://www.mcpservers.cn/servers?tab=official-servers
+
+
+question for demo.
+
+读取 data.txt 文件的内容，然后计算里面所有数字的统计信息，最后用 Python 生成一个可视化报告
+搜索最新的人工智能新闻，然后用 Python 提取关键信息，最后保存到 ai_news.txt 文件
+
+计算 sqrt(16) + pow(2, 3)，然后把结果保存到 result.txt，再读取确认一下
+
+生成一个斐波那契数列的 Python 代码，执行它，然后对结果进行统计分析
+
+
+"用 Python 生成 10 个随机数，计算它们的统计信息，然后保存到 random_stats.txt"
+
+
+"计算 100 到 200 之间所有数字的平方，然后统计这些平方数的平均值和总和"
+
+"搜索最新的 MCP 协议信息，用 Python 提取关键数据，进行统计分析，然后生成报告保存到文件"
