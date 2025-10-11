@@ -40,6 +40,16 @@
       "args": null,
       "url": "http://localhost:9000",
       "env": null
+    },
+    {
+      "name": "python-executor",
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "mcp_server_python_executor.py"
+      ],
+      "url": null,
+      "env": null
     }
   ]
 }
