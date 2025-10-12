@@ -1,0 +1,157 @@
+{
+  "internal/file-server": {
+    "id": "internal/file-server",
+    "name": "文件操作服务器",
+    "description": "提供文件读取、写入、追加等操作的 MCP Server",
+    "long_description": "这是一个功能强大的文件操作工具，支持：\n- 读取文件内容\n- 写入文件\n- 追加内容到文件\n- 列出目录内容\n\n适用于需要文件操作能力的 AI 助手场景。",
+    "version": "1.0.0",
+    "author": "Internal Team",
+    "category": "file",
+    "tags": [
+      "文件",
+      "IO",
+      "工具",
+      "python"
+    ],
+    "type": "stdio",
+    "install_config": {
+      "command": "python",
+      "args": [
+        "mcp_server_file.py"
+      ]
+    },
+    "package_url": "",
+    "readme_url": "",
+    "icon_url": "",
+    "dependencies": [],
+    "requires_env": [],
+    "downloads": 0,
+    "rating": 5.0,
+    "created_at": "2025-10-12T14:41:09.775070",
+    "updated_at": "2025-10-12T14:41:09.775070"
+  },
+  "internal/rest-test-server": {
+    "id": "internal/rest-test-server",
+    "name": "REST API 测试服务器",
+    "description": "用于测试 REST API 集成的示例 MCP Server",
+    "long_description": "REST API 协议的 MCP Server 示例，用于演示：\n- REST API 协议集成\n- HTTP 通信\n- JSON 数据交换\n\n可作为开发 REST 协议 MCP Server 的参考。",
+    "version": "1.0.0",
+    "author": "Internal Team",
+    "category": "api",
+    "tags": [
+      "rest",
+      "api",
+      "示例",
+      "测试"
+    ],
+    "type": "rest",
+    "install_config": {
+      "url": "http://localhost:9000"
+    },
+    "package_url": "",
+    "readme_url": "",
+    "icon_url": "",
+    "dependencies": [],
+    "requires_env": [],
+    "downloads": 0,
+    "rating": 5.0,
+    "created_at": "2025-10-12T14:41:09.777081",
+    "updated_at": "2025-10-12T14:41:09.777081"
+  },
+  "internal/calc-server": {
+    "id": "internal/calc-server",
+    "name": "计算工具服务器",
+    "description": "提供数学计算和统计分析功能的 MCP Server",
+    "long_description": "强大的数学计算工具，支持：\n- 基本运算（加减乘除）\n- 高级数学函数（平方根、幂、对数）\n- 三角函数\n- 统计分析（平均值、中位数、标准差）\n\n适用于需要数学计算能力的场景。",
+    "version": "1.0.0",
+    "author": "Internal Team",
+    "category": "compute",
+    "tags": [
+      "计算",
+      "数学",
+      "统计",
+      "python"
+    ],
+    "type": "stdio",
+    "install_config": {
+      "command": "python",
+      "args": [
+        "mcp_server_calc.py"
+      ]
+    },
+    "package_url": "",
+    "readme_url": "",
+    "icon_url": "",
+    "dependencies": [],
+    "requires_env": [],
+    "downloads": 1,
+    "rating": 5.0,
+    "created_at": "2025-10-12T14:41:09.778899",
+    "updated_at": "2025-10-12T14:41:09.778899"
+  },
+  "external/tavily-search": {
+    "id": "external/tavily-search",
+    "name": "Tavily 搜索服务",
+    "description": "使用 Tavily API 进行网络搜索的 MCP Server",
+    "long_description": "集成 Tavily 搜索引擎的 MCP Server：\n- 实时网络搜索\n- 智能内容提取\n- 高质量搜索结果\n- AI 优化的信息检索\n\n需要 Tavily API Key。",
+    "version": "0.1.4",
+    "author": "Tavily Team",
+    "category": "search",
+    "tags": [
+      "搜索",
+      "tavily",
+      "网络",
+      "信息检索"
+    ],
+    "type": "stdio",
+    "install_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tavily-mcp@0.1.4"
+      ]
+    },
+    "package_url": "",
+    "readme_url": "",
+    "icon_url": "",
+    "dependencies": [],
+    "requires_env": [
+      "TAVILY_API_KEY"
+    ],
+    "downloads": 0,
+    "rating": 5.0,
+    "created_at": "2025-10-12T14:41:09.780536",
+    "updated_at": "2025-10-12T14:41:09.780536"
+  },
+  "internal/python-executor": {
+    "id": "internal/python-executor",
+    "name": "Python 代码执行器",
+    "description": "安全执行 Python 代码的 MCP Server",
+    "long_description": "Python 代码执行服务器，功能包括：\n- 安全的 Python 代码执行\n- 支持标准库\n- 返回执行结果和错误信息\n- 超时保护\n\n⚠️ 注意：请在受控环境中使用，避免执行不可信代码。",
+    "version": "1.0.0",
+    "author": "Internal Team",
+    "category": "code",
+    "tags": [
+      "python",
+      "代码执行",
+      "脚本",
+      "工具"
+    ],
+    "type": "stdio",
+    "install_config": {
+      "command": "python",
+      "args": [
+        "mcp_server_python_executor.py"
+      ]
+    },
+    "package_url": "",
+    "readme_url": "",
+    "icon_url": "",
+    "dependencies": [],
+    "requires_env": [],
+    "downloads": 0,
+    "rating": 5.0,
+    "created_at": "2025-10-12T14:41:09.782136",
+    "updated_at": "2025-10-12T14:41:09.782136"
+  }
+}

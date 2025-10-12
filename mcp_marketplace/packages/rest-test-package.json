@@ -1,0 +1,22 @@
+{
+  "id": "internal/rest-test-server",
+  "name": "REST API 测试服务器",
+  "description": "用于测试 REST API 集成的示例 MCP Server",
+  "long_description": "REST API 协议的 MCP Server 示例，用于演示：\n- REST API 协议集成\n- HTTP 通信\n- JSON 数据交换\n\n可作为开发 REST 协议 MCP Server 的参考。",
+  "version": "1.0.0",
+  "author": "Internal Team",
+  "category": "api",
+  "tags": ["rest", "api", "示例", "测试"],
+  "type": "rest",
+  "install_config": {
+    "url": "http://localhost:9000"
+  },
+  "package_url": "",
+  "readme_url": "",
+  "icon_url": "",
+  "dependencies": [],
+  "requires_env": [],
+  "downloads": 0,
+  "rating": 5.0
+}
+

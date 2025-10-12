@@ -1,0 +1,23 @@
+{
+  "id": "external/tavily-search",
+  "name": "Tavily 搜索服务",
+  "description": "使用 Tavily API 进行网络搜索的 MCP Server",
+  "long_description": "集成 Tavily 搜索引擎的 MCP Server：\n- 实时网络搜索\n- 智能内容提取\n- 高质量搜索结果\n- AI 优化的信息检索\n\n需要 Tavily API Key。",
+  "version": "0.1.4",
+  "author": "Tavily Team",
+  "category": "search",
+  "tags": ["搜索", "tavily", "网络", "信息检索"],
+  "type": "stdio",
+  "install_config": {
+    "command": "npx",
+    "args": ["-y", "tavily-mcp@0.1.4"]
+  },
+  "package_url": "",
+  "readme_url": "",
+  "icon_url": "",
+  "dependencies": [],
+  "requires_env": ["TAVILY_API_KEY"],
+  "downloads": 0,
+  "rating": 5.0
+}
+

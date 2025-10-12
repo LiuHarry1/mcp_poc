@@ -1,0 +1,23 @@
+{
+  "id": "internal/python-executor",
+  "name": "Python 代码执行器",
+  "description": "安全执行 Python 代码的 MCP Server",
+  "long_description": "Python 代码执行服务器，功能包括：\n- 安全的 Python 代码执行\n- 支持标准库\n- 返回执行结果和错误信息\n- 超时保护\n\n⚠️ 注意：请在受控环境中使用，避免执行不可信代码。",
+  "version": "1.0.0",
+  "author": "Internal Team",
+  "category": "code",
+  "tags": ["python", "代码执行", "脚本", "工具"],
+  "type": "stdio",
+  "install_config": {
+    "command": "python",
+    "args": ["mcp_server_python_executor.py"]
+  },
+  "package_url": "",
+  "readme_url": "",
+  "icon_url": "",
+  "dependencies": [],
+  "requires_env": [],
+  "downloads": 0,
+  "rating": 5.0
+}
+

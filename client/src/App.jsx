@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react'
 import ServerList from './components/ServerList'
 import ToolList from './components/ToolList'
 import ChatBox from './components/ChatBox'
+import MarketplaceView from './components/MarketplaceView'
 import './App.css'
 
 function App() {
   const [servers, setServers] = useState([])
   const [connectedServers, setConnectedServers] = useState([])
   const [tools, setTools] = useState([])
+  const [activeTab, setActiveTab] = useState('marketplace') // 'marketplace' or 'manager'
 
   const loadServers = async () => {
     try {
@@ -40,6 +42,12 @@ function App() {
     loadTools()
   }
 
+  const handleInstallFromMarketplace = () => {
+    // 安装完成后刷新服务器列表并切换到管理页面
+    loadServers()
+    setActiveTab('manager')
+  }
+
   return (
     <div className="app">
       <header className="header">
@@ -47,22 +55,41 @@ function App() {
           <h1>🚀 MCP Web Manager</h1>
         </div>
         <div className="header-right">
-          <span>动态配置 MCP 服务器并进行智能对话</span>
+          <div className="tab-nav">
+            <button 
+              className={`tab-btn ${activeTab === 'marketplace' ? 'active' : ''}`}
+              onClick={() => setActiveTab('marketplace')}
+            >
+              🏪 Marketplace
+            </button>
+            <button 
+              className={`tab-btn ${activeTab === 'manager' ? 'active' : ''}`}
+              onClick={() => setActiveTab('manager')}
+            >
+              ⚙️ 管理器
+            </button>
+          </div>
         </div>
       </header>
 
       <div className="main-content">
-        <div className="sidebar">
-          <ServerList 
-            servers={servers}
-            connectedServers={connectedServers}
-            onUpdate={handleServerUpdate}
-          />
-          
-          <ToolList tools={tools} />
-        </div>
+        {activeTab === 'marketplace' ? (
+          <MarketplaceView onInstall={handleInstallFromMarketplace} />
+        ) : (
+          <>
+            <div className="sidebar">
+              <ServerList 
+                servers={servers}
+                connectedServers={connectedServers}
+                onUpdate={handleServerUpdate}
+              />
+              
+              <ToolList tools={tools} />
+            </div>
 
-        <ChatBox />
+            <ChatBox />
+          </>
+        )}
       </div>
     </div>
   )

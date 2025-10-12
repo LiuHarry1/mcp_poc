@@ -1,0 +1,23 @@
+{
+  "id": "internal/calc-server",
+  "name": "计算工具服务器",
+  "description": "提供数学计算和统计分析功能的 MCP Server",
+  "long_description": "强大的数学计算工具，支持：\n- 基本运算（加减乘除）\n- 高级数学函数（平方根、幂、对数）\n- 三角函数\n- 统计分析（平均值、中位数、标准差）\n\n适用于需要数学计算能力的场景。",
+  "version": "1.0.0",
+  "author": "Internal Team",
+  "category": "compute",
+  "tags": ["计算", "数学", "统计", "python"],
+  "type": "stdio",
+  "install_config": {
+    "command": "python",
+    "args": ["mcp_server_calc.py"]
+  },
+  "package_url": "",
+  "readme_url": "",
+  "icon_url": "",
+  "dependencies": [],
+  "requires_env": [],
+  "downloads": 0,
+  "rating": 5.0
+}
+

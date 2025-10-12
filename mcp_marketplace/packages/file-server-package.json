@@ -1,0 +1,23 @@
+{
+  "id": "internal/file-server",
+  "name": "文件操作服务器",
+  "description": "提供文件读取、写入、追加等操作的 MCP Server",
+  "long_description": "这是一个功能强大的文件操作工具，支持：\n- 读取文件内容\n- 写入文件\n- 追加内容到文件\n- 列出目录内容\n\n适用于需要文件操作能力的 AI 助手场景。",
+  "version": "1.0.0",
+  "author": "Internal Team",
+  "category": "file",
+  "tags": ["文件", "IO", "工具", "python"],
+  "type": "stdio",
+  "install_config": {
+    "command": "python",
+    "args": ["mcp_server_file.py"]
+  },
+  "package_url": "",
+  "readme_url": "",
+  "icon_url": "",
+  "dependencies": [],
+  "requires_env": [],
+  "downloads": 0,
+  "rating": 5.0
+}
+
