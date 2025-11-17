@@ -79,6 +79,10 @@
   height: calc(100vh - 140px);
 }
 
+.main-content:has(.marketplace) {
+  grid-template-columns: 1fr;
+}
+
 .sidebar {
   background: var(--surface-color);
   border-radius: 12px;
